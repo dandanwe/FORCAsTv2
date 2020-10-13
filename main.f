@@ -1808,6 +1808,12 @@ c ka - added next lines to find correct levels for the observations
      &   levmxd
 !ka - added for sonics data; end of inserted lines
 
+      write(85,'(x,a)') 
+     &'Conc. of condensible surrogate (ug m-3) in aerosol phase'
+      write(86,'(x,a)') 
+     &'Conc. of condensible surrogate (ug m-3) in gas phase'
+      write(87,'(x,a)') 
+     &'Condensation rate of surrogate (ug m-3 per time step)'
 
       zf(nlev)=z(nlev)+0.5*(z(nlev)-z(nlev-1))
       do k=1,nlev-1
